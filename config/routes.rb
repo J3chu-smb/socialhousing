@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'tasks/index', to: 'tasks#index'
+  get 'tasks/:id', to: 'tasks#show'
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  root to: "home#index"
+  root to: "tasks#index"
 end
