@@ -1,8 +1,6 @@
-class User < ApplicationRecord
-  has_many :user_tasks, dependent: :destroy
-  has_many :tasks, through: :user_tasks
+class AdminUser < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
+  devise :database_authenticatable, 
          :recoverable, :rememberable, :validatable
 end
