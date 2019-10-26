@@ -7,4 +7,8 @@ class TasksController < ApplicationController
 
   def show
   end
+
+  def destroy
+    @task.destroy
+  end
 end
