@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'news/index', to: 'news#index'
+  get 'news/:id', to: 'news#show', as: 'news_show'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'tasks/index', to: 'tasks#index'
