@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.fas {
+  color: #0095ff;
+}
+
+.search {
+  background-color: #ffaa00;
+}
