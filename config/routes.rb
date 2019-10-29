@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'projects/index', to: 'projects#index' 
+  get 'projects', to: 'projects#index', as: 'projects'
   get 'projects/show', to: 'projects#show', as: 'projects_show'
   get 'tasks/index', to: 'tasks#index'
   get 'tasks/:id', to: 'tasks#show', as: 'tasks_show'
