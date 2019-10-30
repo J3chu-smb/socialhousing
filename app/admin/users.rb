@@ -9,6 +9,7 @@ ActiveAdmin.register User do
 
   index do
    column :id
+   column :name
    column :email
    column :created_at
    actions
@@ -21,11 +22,6 @@ ActiveAdmin.register User do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
-  form do |f|
-    input :name
-    input :email
-    input :password
-    actions
-  end
+
 
 end
